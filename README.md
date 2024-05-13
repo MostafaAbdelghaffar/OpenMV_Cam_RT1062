@@ -114,3 +114,5 @@ As shown in the previous figure, it could be observed that there is a huge gap w
 Based on this observation, a manual threshold value of 1.55 was set.
 
 The last comparison is made to detect the liquid based on the previous. To see whether the normalized segment value is above 1.55 or below.
+
+ <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" /><br>Edge
