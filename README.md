@@ -48,7 +48,8 @@ Far view | Close view
 
 The project is focused on the left long region of the cartridge. The camera needs to capture the channel in a straight and vertical orientation, and the lens should be aligned so the channel appears straight and vertical almost completely.
 
-<img src="https://i.imgur.com/vlCgP9I.png" alt="drawing" width="200"/>
+<img src="https://i.imgur.com/vlCgP9I.png" alt="drawing" width="200"/><br>
+
 
 Givens:
 - Lighting.
@@ -114,5 +115,3 @@ As shown in the previous figure, it could be observed that there is a huge gap w
 Based on this observation, a manual threshold value of 1.55 was set.
 
 The last comparison is made to detect the liquid based on the previous. To see whether the normalized segment value is above 1.55 or below.
-
- <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" /><br>Edge
