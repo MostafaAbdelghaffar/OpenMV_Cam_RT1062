@@ -120,9 +120,7 @@ Manual_Threshold = 1.3
 
 The last comparison is made to detect the liquid based on the previous. To see whether the normalized segment value is above 1.3 or below.
 
-The following is the end result of my application.
-
-<iframe src="https://giphy.com/embed/3T8foUA9xtgXF2HIdz" width="480" height="274" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/3T8foUA9xtgXF2HIdz"</p>
+<iframe src="https://giphy.com/embed/3T8foUA9xtgXF2HIdz" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 
-<iframe src="https://giphy.com/embed/3T8foUA9xtgXF2HIdz" width="480" height="274" alt="drawing" width="200"/><br>
+The previous GIF shows the end result of my application.
