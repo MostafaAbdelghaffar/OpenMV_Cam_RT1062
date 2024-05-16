@@ -112,6 +112,16 @@ The following is the observation on the values when it is empty as well as full:
 
 As shown in the previous figure, it could be observed that there is a huge gap when the channel is empty compared to when it is full.
 
-Based on this observation, a manual threshold value of 1.55 was set.
+Based on this observation, a manual threshold value of 1.3 was set.
 
-The last comparison is made to detect the liquid based on the previous. To see whether the normalized segment value is above 1.55 or below.
+```py
+Manual_Threshold = 1.3
+```
+
+The last comparison is made to detect the liquid based on the previous. To see whether the normalized segment value is above 1.3 or below.
+
+The following is the end result of my application.
+
+<iframe src="https://giphy.com/embed/3T8foUA9xtgXF2HIdz" width="480" height="274" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/3T8foUA9xtgXF2HIdz"</p>
+
+
