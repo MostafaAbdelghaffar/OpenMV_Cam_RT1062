@@ -12,7 +12,7 @@ Date: "09/05/2024"
 1. [Algorithm and Code](#algorithm)
 
 
-#### Introduction:
+## Introduction:
 
 The project, named Janus, is designed for medical applications, indicating that the cartridge contains microchannels through which various liquids, including different enzymes, flow.
 
@@ -20,7 +20,7 @@ The project is inspired by the utilization of image processing and computer visi
 
 The algorithm relies entirely on the [grayscale intensity level](https://i.stack.imgur.com/fdbAz.png) of each pixel in the captured frame from the camera, thus depending on the light and its intensity.
 
-#### Hardware:
+## Hardware:
 - [OpenMV Cam RT1062](https://openmv.io/products/openmv-cam-rt)
 - [Manual Linear Positioning Stage](https://www.amazon.co.uk/Positioning-Trimming-Micrometer-Displacement-Precision/dp/B0C4PPD2VW) for the [Cartridge](https://i.imgur.com/axXRbiQ.jpeg)
 
@@ -29,7 +29,7 @@ The algorithm relies entirely on the [grayscale intensity level](https://i.stack
 - [Water-Cooled Breadboards](https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=4918)
 - [Box](https://www.plastor.co.uk/euro-stacking-containers-with-and-without-lids-folding-containers/prime-economy-range-euro-container-cases/ref-bk-case43-32-prime-economy-euro-container-cases-400-x-300-x-335mm-with-hand-holes/) for controlling light
 
-#### Software:
+## Software:
 
 In addition to utilizing [OpenCV](https://opencv.org/) to gain a sufficient understanding of how to achieve the desired outcome, trainings were conducted using [OpenCV](https://opencv.org/) for image processing. Additionally, the project employed the following tools:
 
@@ -37,7 +37,7 @@ In addition to utilizing [OpenCV](https://opencv.org/) to gain a sufficient unde
 - [OpenMV IDE](https://openmv.io/pages/download) using [MicroPython](https://micropython.org/)
 
 
-#### Setup:
+## Setup:
 The following images are self-explanatory regarding how the hardware was set up.
 
 Far view | Close view
@@ -61,7 +61,7 @@ Constraints:
 
 In the current stage, for the code to work, the camera has to capture the Channel has to be in a straight and vertical orientation and the lens should be correlated so the channel should be straight and vertical almost completely.
 
-#### Algorithm:
+## Algorithm:
 
 Initially, the liquid detection via the grayscale intensity is based on the greyscale intensity level, ranging from 0 to 255, where 0 is black and 255 is white.
 
