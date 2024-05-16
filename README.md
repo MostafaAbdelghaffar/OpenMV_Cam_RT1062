@@ -125,3 +125,4 @@ The following is the end result of my application.
 <iframe src="https://giphy.com/embed/3T8foUA9xtgXF2HIdz" width="480" height="274" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/3T8foUA9xtgXF2HIdz"</p>
 
 
+<iframe src="https://giphy.com/embed/3T8foUA9xtgXF2HIdz" width="480" height="274" alt="drawing" width="200"/><br>
