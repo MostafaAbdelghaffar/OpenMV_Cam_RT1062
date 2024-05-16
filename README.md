@@ -48,7 +48,7 @@ Far view | Close view
 
 The project is focused on the left long region of the cartridge. The camera needs to capture the channel in a straight and vertical orientation, and the lens should be aligned so the channel appears straight and vertical almost completely.
 
-<img src="https://i.imgur.com/vlCgP9I.png" alt="drawing" width="200"/><br>
+<img src="https://i.imgur.com/vlCgP9I.png" alt="drawing" width="300"/><br>
 
 
 Givens:
