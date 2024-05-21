@@ -48,11 +48,11 @@ Far view | Close view
 
 The project is focused on the left long region of the cartridge. The camera needs to capture the channel in a straight and vertical orientation, and the lens should be aligned so the channel appears straight and vertical almost completely.
 
-<figure>
-  <img src="https://i.imgur.com/vlCgP9I.png" alt="Sample Image" width="300">
-  <figcaption>Figure 1: Example Label</figcaption> 
-</figure>
 
+<figure style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh;">
+        <img src="https://i.imgur.com/vlCgP9I.png" alt="Sample Image" width="300">
+        <figcaption>Figure 1: Camera's prespective</figcaption>
+    </figure>
 
 Constraints: 
 In the current stage, for the code to work, the camera has to capture the Channel has to be in a straight and vertical orientation and the lens should be correlated so the channel should be straight and vertical almost completely.
@@ -69,19 +69,33 @@ For each frame, there are two copies created: one in an "RGB" format and one in 
 
 The first objective was to detect lines in the cartridge to detect the location of the channel. The technique that was used is [Hough Line Transform](https://docs.openmv.io/library/omv.image.html).
 
-![Showing_LINES](https://i.imgur.com/fWLCujJ.jpeg)
+<figure style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh;">
+        <img src="https://i.imgur.com/fWLCujJ.jpeg" alt="Sample Image" width="300">
+        <figcaption>Figure 2: Showing lines</figcaption>
+    </figure>
+
 
 Subsequently, from the data, calculate the maximum horizontal and vertical as well as minimum of pixels of the detected lines (assuming that the lines detected the channel), which are the corner positions of the channel leading to form a bounding box around the channel.
 
-![Bounding_box_Only](https://i.imgur.com/GOxnQ5z.jpeg)
+<figure style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh;">
+        <img src="https://i.imgur.com/GOxnQ5z.jpeg" alt="Sample Image" width="300">
+        <figcaption>Figure 3: Bounding box </figcaption>
+    </figure>
+
 
 Now, as the channel is detected, it is split into segments along the frame's height. For each segment of the channel, the mean value of its grayscale intensity will be extracted and stored in an array. The following figure shows the segments lines of the channel.
 
-![Bounding_box_with_Segment_lines](https://i.imgur.com/BFH9ZuK.jpeg)
+<figure style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh;">
+        <img src="https://i.imgur.com/BFH9ZuK.jpeg" alt="Sample Image" width="300">
+        <figcaption>Figure 4: Segment Lines in the channel </figcaption>
+    </figure>
 
 The same will be applied to a "reference segment" which is out of the channel, the cartridge background. This will act as our refrence threshold to detect whether the channel is full or empty depending on the gradient level. The cartridge background is grey and falls around 125 units depending on the light intensity of the environment.
 
-![Reference_rect](https://i.imgur.com/EQfuHMB.jpeg)
+<figure style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50vh;">
+        <img src="https://i.imgur.com/EQfuHMB.jpeg" alt="Sample Image" width="300">
+        <figcaption>Figure 5: Reference Rectangle (black) </figcaption>
+    </figure>
 
 Now, we have an array of the mean values of each segment in the channel as well as the mean value of the reference rectangle that we created.
 
@@ -89,7 +103,11 @@ By dividing the array by the reference rectangle, we normalize the segment value
 
 The following is the observation on the values when it is empty as well as full:
 
-![Analysis](https://i.imgur.com/ryAm08U.png)
+<figure style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 90vh;">
+        <img src="https://i.imgur.com/ryAm08U.png" alt="Sample Image" width="700" >
+        <figcaption>Figure 6: Analysis (Empty vs Full) channels </figcaption>
+    </figure>
+
 
 As shown in the previous figure, it could be observed that there is a huge gap when the channel is empty compared to when it is full.
 
